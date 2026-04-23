@@ -532,3 +532,29 @@
       opacity: 1;
       transform: none;
     }
+
+    .dev-sign {
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+    }
+
+    .dev-sign:hover {
+    opacity: 1;
+    }
+
+    .dev-sign span {
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    color: var(--warm-gray);
+    }
+
+    .dev-sign img {
+    height: 16px;
+    width: auto;
+    object-fit: contain;
+    }
