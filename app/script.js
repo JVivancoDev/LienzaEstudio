@@ -26,12 +26,20 @@ async function init() {
       document.body.style.overflow = isOpen ? 'hidden' : '';
     });
 
-    document.querySelectorAll('.menu-link').forEach(link => {
-      link.addEventListener('click', () => {
-        mobileMenu.classList.remove('open');
-        burger.classList.remove('open');
-        document.body.style.overflow = '';
-      });
+    document.querySelectorAll('[data-link]').forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+
+            const section = link.getAttribute('data-link');
+
+            // Si estás en index
+            if (window.location.pathname.endsWith('index.html') || window.location.pathname === '/' || window.location.pathname === `${BASE_PATH}/`) {
+            window.location.hash = section;
+            } else {
+            // Si estás en una página de proyecto
+            window.location.href = `${BASE_PATH}/index.html#${section}`;
+            }
+        });
     });
   }
 
