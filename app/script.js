@@ -1,6 +1,6 @@
-const BASE_PATH = location.hostname.includes("github.io")
-  ? "/LienzaEstudio"
-  : "";
+const BASE_PATH = location.pathname.split('/')[1]
+  ? `/${location.pathname.split('/')[1]}`
+  : '';
 
 async function loadComponent(id, file) {
   const res = await fetch(file);
