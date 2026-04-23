@@ -1,0 +1,45 @@
+/* ── PROYECTO DETALLE ── */
+
+.proyecto-header {
+  padding: 6rem 5% 2rem;
+}
+
+.proyecto-header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.proyecto-header span {
+  font-size: 0.9rem;
+  color: var(--warm-gray);
+  letter-spacing: 0.05em;
+}
+
+/* Imagen principal */
+.proyecto-imagen-principal img {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+}
+
+/* Descripción */
+.proyecto-descripcion {
+  max-width: 700px;
+  margin: 3rem auto;
+  padding: 0 5%;
+  line-height: 1.8;
+}
+
+/* Galería */
+.proyecto-galeria {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  padding: 2rem 5% 4rem;
+}
+
+.proyecto-galeria img {
+  width: 100%;
+  display: block;
+}

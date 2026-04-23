@@ -1,0 +1,24 @@
+[
+  {
+    "id": "cuenca",
+    "titulo": "Casa Cuenca",
+    "ubicacion": "Casablanca",
+    "anio": "2026",
+    "descripcion": "Proyecto residencial enfocado en...",
+    "imagenes": [
+      "img/P09_CASA_V_EXTERIOR_02.png",
+      "img/P10_CASA_V_EXTERIOR_ATRAS_02.png"
+    ]
+  },
+  {
+    "id": "diagonal",
+    "titulo": "Casa Diagonal",
+    "ubicacion": "Casablanca",
+    "anio": "2026",
+    "descripcion": "Diseño con enfoque en...",
+    "imagenes": [
+      "img/V01_AlejandraSoto_PP.png",
+      "img/V03_AlejandraSoto_PP.png"
+    ]
+  }
+]

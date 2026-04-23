@@ -1,0 +1,22 @@
+[
+  {
+    "numero": "01",
+    "titulo": "Diseño 90",
+    "descripcion": "Diseñamos su proyecto menor a 90 m², con reuniones cada dos semanas hasta aprobar el diseño. Este servicio incluye la entrega digital de planimetría, recorridos virtuales y vistas de cómo quedaría el proyecto construido."
+  },
+  {
+    "numero": "02",
+    "titulo": "Asesoría Normativa",
+    "descripcion": "Revisamos su proyecto existente o en desarrollo para verificar el cumplimiento de la normativa vigente. Entregamos un informe detallado con observaciones y recomendaciones para obtener los permisos correspondientes."
+  },
+  {
+    "numero": "03",
+    "titulo": "Proyecto de Arquitectura",
+    "descripcion": "Desarrollamos el proyecto completo desde el anteproyecto hasta la obtención del permiso de edificación, incluyendo todas las especialidades necesarias para una construcción exitosa."
+  },
+  {
+    "numero": "04",
+    "titulo": "Diseño de Interiores",
+    "descripcion": "Creamos espacios interiores que combinan funcionalidad y estética, con selección de materiales, mobiliario y paletas de color que reflejan la identidad y necesidades de cada cliente."
+  }
+]

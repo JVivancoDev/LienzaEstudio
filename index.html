@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lienza Estudio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="page-wrapper">
+    <div id="header"></div>
+
+    <main>
+      <!-- ── HERO CAROUSEL ── -->
+      <section id="inicio">
+        <div class="carousel-track" id="carouselTrack">
+
+          <div class="slide slide-1">
+            <div class="slide-placeholder">
+              <img class="slide-bg" src="img/P09_CASA_V_EXTERIOR_02.png" alt="...">
+            </div>
+            <div class="slide-caption">Casa Cuenca, Casablanca · 2026</div>
+          </div>
+
+          <div class="slide slide-2">
+            <div class="slide-placeholder">
+              <img class="slide-bg" src="img/P10_CASA_V_EXTERIOR_ATRAS_02.png" alt="...">
+            </div>
+            <div class="slide-caption">Casa Diagonal, Casablanca · 2026</div>
+          </div>
+
+          <div class="slide slide-3">
+            <div class="slide-placeholder">
+              <img class="slide-bg" src="img/V01_AlejandraSoto_PP.png" alt="...">
+            </div>
+            <div class="slide-caption">Proyecto · Región de Valparaíso</div>
+          </div>
+
+        </div>
+
+        <button class="carousel-btn prev" id="prevBtn" aria-label="Anterior">
+          <svg viewBox="0 0 48 48"><polyline points="30,10 14,24 30,38"/></svg>
+        </button>
+        <button class="carousel-btn next" id="nextBtn" aria-label="Siguiente">
+          <svg viewBox="0 0 48 48"><polyline points="18,10 34,24 18,38"/></svg>
+        </button>
+
+        <div class="carousel-dots" id="carouselDots"></div>
+      </section>
+
+      <!-- ── PROYECTOS ── -->
+      <section id="proyectos">
+
+        <div class="proyectos-wrapper">
+
+          <!-- TEXTO -->
+          <div class="proyecto-texto">
+            <h2>
+              Hola!
+            </h2>
+            <p>
+              Somos un estudio de arquitectura y diseño de la Región de Valparaíso,
+              enfocado en la asesoría normativa y el desarrollo de proyectos
+              residenciales y comerciales.
+            </p>
+          </div>
+
+          <!-- PROYECTOS -->
+          <div class="proyectos-grid">
+
+            <div class="proyecto">
+              <a href="pages/proyecto.html?id=cuenca">
+                <img src="img/P09_CASA_V_EXTERIOR_02.png">
+              </a>
+              <p>Casa Cuenca, Casablanca. 2026</p>
+            </div>
+
+            <div class="proyecto">
+              <a href="pages/proyecto.html?id=diagonal">
+                <img src="img/P10_CASA_V_EXTERIOR_ATRAS_02.png">
+              </a>
+              <p>Casa Diagonal, Casablanca. 2026</p>
+            </div>
+
+            <div class="proyecto">
+              <a href="">
+                <img src="img/V01_AlejandraSoto_PP.png">
+              </a>
+              <p>Casa Diagonal, Casablanca. 2026</p>
+            </div>
+
+            <div class="proyecto">
+              <a href="">
+                <img src="img/V03_AlejandraSoto_PP.png">
+              </a>
+              <p>Proyecto 4</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- ── SERVICIOS ── -->
+      <section id="servicios">
+        <div class="servicios-header reveal">
+          <h2>Servicios</h2>
+        </div>
+        <div class="servicios-list" id="serviciosContainer"></div>
+      </section>
+
+
+      <!-- ── CONTACTO ── -->
+      <section id="contacto">
+        <div class="contacto-left reveal">
+          <h2>Conversemos<br>sobre su proyecto</h2>
+          <p>
+            Estamos en la Región de Valparaíso y nos encantaría conocer su idea.
+            Escríbanos por WhatsApp y lo contactaremos a la brevedad.
+          </p>
+        </div>
+        <div class="contacto-right reveal">
+          <a href="https://wa.me/56999030677" target="_blank" rel="noopener" class="ig-btn">
+            <img src="img/whatsappIcon.png" alt="" class="wsp-icon">
+            Escribir por WhatsApp
+          </a>
+        </div>
+      </section>
+    </main>
+    <div id="footer"></div>
+</div>
+<script src="app/script.js"></script>
+</body>
+</html>
