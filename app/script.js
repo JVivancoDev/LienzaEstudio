@@ -13,7 +13,7 @@ async function loadComponent(id, file) {
 async function init() {
   // 1. Cargar header y footer primero
   await loadComponent("header", `${BASE_PATH}/components/header.html`);
-  await loadComponent("footer", `$(BASE_PATH)/components/footer.html`);
+  await loadComponent("footer", `${BASE_PATH}/components/footer.html`);
 
   // 2. Ahora SÍ existen en el DOM
   const burger = document.getElementById('burgerBtn');
