@@ -1,3 +1,7 @@
+const BASE_PATH = location.hostname.includes("github.io")
+  ? "/LienzaEstudio"
+  : "";
+
 async function loadComponent(id, file) {
   const res = await fetch(file);
   const html = await res.text();
@@ -6,8 +10,8 @@ async function loadComponent(id, file) {
 
 async function init() {
   // 1. Cargar header y footer primero
-  await loadComponent("header", "/components/header.html");
-  await loadComponent("footer", "/components/footer.html");
+  await loadComponent("header", "$(BASE_PATH)/components/header.html");
+  await loadComponent("footer", "$(BASE_PATH)/components/footer.html");
 
   // 2. Ahora SÍ existen en el DOM
   const burger = document.getElementById('burgerBtn');

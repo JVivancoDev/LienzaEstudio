@@ -25,7 +25,15 @@ async function cargarProyecto() {
 }
 
 function getImagePath(img) {
-  return img.startsWith('http') ? img : `../${img}`;
+  const BASE_PATH = location.hostname.includes("github.io")
+    ? "/LienzaEstudio"
+    : "";
+
+  // Si es URL externa (Drive, etc)
+  if (img.startsWith('http')) return img;
+
+  // Si es imagen local
+  return `${BASE_PATH}/${img}`;
 }
 
 function fixDriveUrl(url) {
