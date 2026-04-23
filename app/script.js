@@ -2,8 +2,6 @@ const BASE_PATH = location.pathname.split('/')[1]
   ? `/${location.pathname.split('/')[1]}`
   : '';
 
-console.log("BASE_PATH:", BASE_PATH);
-
 async function loadComponent(id, file) {
   const res = await fetch(file);
   const html = await res.text();
@@ -11,20 +9,21 @@ async function loadComponent(id, file) {
 }
 
 async function init() {
-  // 1. Cargar header y footer primero
-  await loadComponent("header", `${BASE_PATH}/components/header.html`);
-  await loadComponent("footer", `${BASE_PATH}/components/footer.html`);
+    // 1. Cargar header y footer primero
+    await loadComponent("header", `${BASE_PATH}/components/header.html`);
+    await loadComponent("footer", `${BASE_PATH}/components/footer.html`);
 
-  // 2. Ahora SÍ existen en el DOM
-  const burger = document.getElementById('burgerBtn');
-  const mobileMenu = document.getElementById('mobileMenu');
+    // 2. Ahora SÍ existen en el DOM
+    const burger = document.getElementById('burgerBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
 
-  if (burger && mobileMenu) {
-    burger.addEventListener('click', () => {
-      const isOpen = mobileMenu.classList.toggle('open');
-      burger.classList.toggle('open', isOpen);
-      document.body.style.overflow = isOpen ? 'hidden' : '';
-    });
+    if (burger && mobileMenu) {
+        burger.addEventListener('click', () => {
+        const isOpen = mobileMenu.classList.toggle('open');
+        burger.classList.toggle('open', isOpen);
+        document.body.style.overflow = isOpen ? 'hidden' : '';
+        });
+    }
 
     document.querySelectorAll('[data-link]').forEach(link => {
         link.addEventListener('click', (e) => {
@@ -41,7 +40,6 @@ async function init() {
             }
         });
     });
-  }
 
   initCarousel();
   initReveal();
