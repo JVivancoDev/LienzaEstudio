@@ -101,7 +101,7 @@ function initReveal() {
 async function cargarServicios() {
   try {
 
-    const API_URL = "https://script.google.com/macros/s/AKfycbzsXr-GZIB2M1f3KKBi3x54tpePk-XXg-1UG4t9SYeSLK77-1OXDN5ccKC0yntB1D07/exec";
+    const API_URL = "https://script.google.com/macros/s/AKfycbwhxfvOVW1skbyuUtoloap1sFj_BIaLuyToC9TK7s8i3DGSY2yNfOby4_bBqrmcVihi3w/exec";
 
     const response = await fetch(`${API_URL}?sheet=servicios`);
     const servicios = await response.json();
