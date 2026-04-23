@@ -2,6 +2,8 @@ const BASE_PATH = location.pathname.split('/')[1]
   ? `/${location.pathname.split('/')[1]}`
   : '';
 
+console.log("BASE_PATH:", BASE_PATH);
+
 async function loadComponent(id, file) {
   const res = await fetch(file);
   const html = await res.text();
