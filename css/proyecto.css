@@ -1,45 +1,103 @@
 /* ── PROYECTO DETALLE ── */
 
-.proyecto-header {
-  padding: 6rem 5% 2rem;
+/* Volver a proyectos */
+.proyecto-volver-wrap {
+  padding: 2.5rem 5% 0;
 }
 
-.proyecto-header h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.2rem;
-  margin-bottom: 0.5rem;
+.proyecto-volver {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent-red);
+  transition: opacity 0.2s;
 }
+.proyecto-volver:hover { opacity: 0.6; }
+.proyecto-volver span { font-size: 1rem; line-height: 1; }
 
-.proyecto-header span {
-  font-size: 0.9rem;
-  color: var(--warm-gray);
-  letter-spacing: 0.05em;
-}
-
-/* Imagen principal */
-.proyecto-imagen-principal img {
-  width: 100%;
-  height: 70vh;
-  object-fit: cover;
-}
-
-/* Descripción */
-.proyecto-descripcion {
-  max-width: 700px;
-  margin: 3rem auto;
-  padding: 0 5%;
-  line-height: 1.8;
-}
-
-/* Galería */
-.proyecto-galeria {
+/* Imágenes en mosaico (arriba, sin carrusel) */
+.proyecto-mosaico {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
-  padding: 2rem 5% 4rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+  padding: 2rem 5% 0;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.proyecto-mosaico img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
 }
 
-.proyecto-galeria img {
-  width: 100%;
-  display: block;
+/* Nombre, año, lugar y superficie */
+.proyecto-info {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 3.5rem 5% 5rem;
+}
+
+.proyecto-info-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1.5rem;
+  border-bottom: 1px solid rgba(26, 26, 26, 0.12);
+  padding-bottom: 1.8rem;
+}
+
+.proyecto-info-top h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  font-weight: 700;
+  color: var(--dark);
+  line-height: 1.05;
+}
+
+.proyecto-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+}
+
+.proyecto-meta-label {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent-red);
+  margin-bottom: 0.35rem;
+}
+
+.proyecto-meta-value {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.25rem;
+  color: var(--dark);
+}
+
+/* Descripción (debajo de los datos) */
+.proyecto-detalle-desc {
+  max-width: 760px;
+  padding-top: 2.5rem;
+}
+
+.proyecto-detalle-desc p {
+  font-size: clamp(1rem, 1.6vw, 1.15rem);
+  line-height: 1.9;
+  font-weight: 300;
+  color: rgba(26, 26, 26, 0.82);
+  text-wrap: pretty;
+}
+
+@media (max-width: 768px) {
+  .proyecto-info-top {
+    align-items: flex-start;
+  }
 }
