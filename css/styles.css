@@ -152,18 +152,16 @@
     #inicio {
       margin-top: 70px;
       position: relative;
-      padding: 2rem 5% 1.5rem;
+      height: calc(100vh - 70px);
+      max-height: 680px;
+      overflow: hidden;
     }
 
     .hero-carousel {
       width: 100%;
-      height: 60vh;
-      max-height: 600px;
-      min-height: 360px;
+      height: 100%;
       position: relative;
       overflow: hidden;
-      border-radius: 14px;
-      box-shadow: 0 16px 40px rgba(0,0,0,0.18);
     }
 
     .carousel-track {
@@ -187,7 +185,7 @@
 
     .slide-bg {
       width: 100%; height: 100%;
-      object-fit: contain;
+      object-fit: cover;
       display: block;
     }
 
@@ -200,8 +198,16 @@
       font-size: 0.85rem;
       color: rgba(255,255,255,0.45);
       letter-spacing: 0.1em;
-      background: var(--dark);
     }
+
+    .slide-1 .slide-placeholder { background: linear-gradient(160deg, #4a7a8a 0%, #2d5060 100%); }
+    .slide-2 .slide-placeholder { background: linear-gradient(160deg, #6b5d4f 0%, #3d3028 100%); }
+    .slide-3 .slide-placeholder { background: linear-gradient(160deg, #4a6741 0%, #2d3f28 100%); }
+    .slide-4 .slide-placeholder { background: linear-gradient(160deg, #7a5a4a 0%, #402d25 100%); }
+    .slide-5 .slide-placeholder { background: linear-gradient(160deg, #5a6b4a 0%, #2f3a25 100%); }
+    .slide-6 .slide-placeholder { background: linear-gradient(160deg, #4a5a7a 0%, #253048 100%); }
+    .slide-7 .slide-placeholder { background: linear-gradient(160deg, #7a4a5e 0%, #40252f 100%); }
+    .slide-8 .slide-placeholder { background: linear-gradient(160deg, #6b6b4a 0%, #363625 100%); }
 
     .slide-caption {
       position: absolute;
@@ -348,16 +354,6 @@
     }
 
     @media (max-width: 768px) {
-    #inicio {
-        padding: 1rem 4% 1rem;
-    }
-
-    .hero-carousel {
-        height: 48vh;
-        min-height: 280px;
-        border-radius: 10px;
-    }
-
     .proyectos-wrapper {
         grid-template-columns: 1fr;
     }

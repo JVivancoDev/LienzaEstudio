@@ -36,12 +36,6 @@ async function init() {
             // Si estás en una página de proyecto
             window.location.href = `${BASE_PATH}/index.html#${section}`;
             }
-
-            if (mobileMenu && mobileMenu.classList.contains('open')) {
-                mobileMenu.classList.remove('open');
-                burger.classList.remove('open');
-                document.body.style.overflow = '';
-            }
         });
     });
 
