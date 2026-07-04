@@ -152,16 +152,18 @@
     #inicio {
       margin-top: 70px;
       position: relative;
-      height: calc(100vh - 70px);
-      max-height: 680px;
-      overflow: hidden;
+      padding: 2rem 5% 1.5rem;
     }
 
     .hero-carousel {
       width: 100%;
-      height: 100%;
+      height: 60vh;
+      max-height: 600px;
+      min-height: 360px;
       position: relative;
       overflow: hidden;
+      border-radius: 14px;
+      box-shadow: 0 16px 40px rgba(0,0,0,0.18);
     }
 
     .carousel-track {
@@ -177,9 +179,15 @@
       overflow: hidden;
     }
 
+    .slide > a {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
     .slide-bg {
       width: 100%; height: 100%;
-      object-fit: cover;
+      object-fit: contain;
       display: block;
     }
 
@@ -192,11 +200,8 @@
       font-size: 0.85rem;
       color: rgba(255,255,255,0.45);
       letter-spacing: 0.1em;
+      background: var(--dark);
     }
-
-    .slide-1 .slide-placeholder { background: linear-gradient(160deg, #4a7a8a 0%, #2d5060 100%); }
-    .slide-2 .slide-placeholder { background: linear-gradient(160deg, #6b5d4f 0%, #3d3028 100%); }
-    .slide-3 .slide-placeholder { background: linear-gradient(160deg, #4a6741 0%, #2d3f28 100%); }
 
     .slide-caption {
       position: absolute;
@@ -343,6 +348,16 @@
     }
 
     @media (max-width: 768px) {
+    #inicio {
+        padding: 1rem 4% 1rem;
+    }
+
+    .hero-carousel {
+        height: 48vh;
+        min-height: 280px;
+        border-radius: 10px;
+    }
+
     .proyectos-wrapper {
         grid-template-columns: 1fr;
     }

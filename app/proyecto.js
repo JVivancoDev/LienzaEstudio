@@ -5,9 +5,7 @@ async function cargarProyecto() {
   if (!id) return;
 
   try {
-    const API_URL = "https://script.google.com/macros/s/AKfycbwhxfvOVW1skbyuUtoloap1sFj_BIaLuyToC9TK7s8i3DGSY2yNfOby4_bBqrmcVihi3w/exec";
-
-    const res = await fetch(`${API_URL}?sheet=proyectos`);
+    const res = await fetch("/data/proyectos.json");
     const proyectos = await res.json();
 
     const proyecto = proyectos.find(p => p.id === id);
@@ -25,7 +23,8 @@ async function cargarProyecto() {
 }
 
 function getImagePath(img) {
-  return img.startsWith('http') ? img : `/${img}`;
+  if (img.startsWith('http')) return img;
+  return encodeURI(img.startsWith('/') ? img : `/${img}`);
 }
 
 function fixDriveUrl(url) {

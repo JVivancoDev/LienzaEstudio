@@ -1,0 +1,6 @@
+Nombre: Casa Diagonal
+Ubicación: Casablanca
+Superficie: 240m2
+Año: 2026
+
+La casa se ordena en base a tres volúmenes; donde el segundo volumen (Sala de Estar, Comedor y Cocina) desciende 24cm (dos peldaños), para lograr una mayor altura. A esto se suma un lucernario rotado 30°, la cual duplica la altura de la zona común.

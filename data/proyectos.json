@@ -1,24 +1,64 @@
 [
   {
-    "id": "cuenca",
-    "titulo": "Casa Cuenca",
-    "ubicacion": "Casablanca",
-    "anio": "2026",
-    "descripcion": "Proyecto residencial enfocado en...",
-    "imagenes": [
-      "img/P09_CASA_V_EXTERIOR_02.png",
-      "img/P10_CASA_V_EXTERIOR_ATRAS_02.png"
-    ]
-  },
-  {
     "id": "diagonal",
     "titulo": "Casa Diagonal",
     "ubicacion": "Casablanca",
     "anio": "2026",
-    "descripcion": "Diseño con enfoque en...",
+    "superficie": "240m2",
+    "descripcion": "La casa se ordena en base a tres volúmenes; donde el segundo volumen (Sala de Estar, Comedor y Cocina) desciende 24cm (dos peldaños), para lograr una mayor altura. A esto se suma un lucernario rotado 30°, la cual duplica la altura de la zona común.",
     "imagenes": [
-      "img/V01_AlejandraSoto_PP.png",
-      "img/V03_AlejandraSoto_PP.png"
+      "img/01 Casa Diagonal/CasaDiagonal 01.png",
+      "img/01 Casa Diagonal/CasaDiagonal 02.png",
+      "img/01 Casa Diagonal/CasaDiagonal 03.png",
+      "img/01 Casa Diagonal/CasaDiagonal 04.png",
+      "img/01 Casa Diagonal/CasaDiagonal 05.png",
+      "img/01 Casa Diagonal/CasaDiagonal 06.png"
+    ]
+  },
+  {
+    "id": "casav",
+    "titulo": "Casa V",
+    "ubicacion": "Collipulli",
+    "anio": "2025",
+    "superficie": "120m2",
+    "descripcion": "La casa posee dos ejes transversales, que separan las áreas privadas y comunes. Ambos ejes forman un ángulo de 30°, permitiendo la aparición de un patio interior, hacia el cual se vuelcan los grandes ventanales de la sala de estar.",
+    "imagenes": [
+      "img/02 Casa V/CasaV 01.png",
+      "img/02 Casa V/CasaV 02.png",
+      "img/02 Casa V/CasaV 03.png",
+      "img/02 Casa V/CasaV 04.png",
+      "img/02 Casa V/CasaV 05.png"
+    ]
+  },
+  {
+    "id": "abierta",
+    "titulo": "Co-work Casa Abierta",
+    "ubicacion": "La Ligua",
+    "anio": "2026",
+    "superficie": "350m2",
+    "descripcion": "Rehabilitación de la Casa Abierta, espacio que es usado por comunidades de La Ligua, para desarrollar talleres y exposiciones de productos locales. El proyecto de interiorismo busca construir el diálogo entre la cualidad patrimonial de la preexistencia con la identidad visual de la empresa (Sopraval).",
+    "imagenes": [
+      "img/03 Casa Abierta/CASAABIERTA 01.png",
+      "img/03 Casa Abierta/CASAABIERTA 02.png",
+      "img/03 Casa Abierta/CASAABIERTA 03.png",
+      "img/03 Casa Abierta/CASAABIERTA 04.png",
+      "img/03 Casa Abierta/CASAABIERTA 05.png"
+    ]
+  },
+  {
+    "id": "sopraval",
+    "titulo": "Programa de Recuperación de Espacios",
+    "ubicacion": "La Calera",
+    "anio": "2022-2023",
+    "superficie": "100m2",
+    "descripcion": "Proyecto en vinculación con Sopraval y comunidades de La Calera. Se desarrollaron una serie de intervenciones públicas en plazas de la comuna, mediante un diseño y construcción participativa. Se caracterizaron por ser operaciones puntuales para incentivar la activación de estos espacios.",
+    "imagenes": [
+      "img/04 Plazas Sopraval/Sopraval 01.png",
+      "img/04 Plazas Sopraval/Sopraval 02.png",
+      "img/04 Plazas Sopraval/Sopraval 03.png",
+      "img/04 Plazas Sopraval/Sopraval 04.png",
+      "img/04 Plazas Sopraval/Sopraval 05.png",
+      "img/04 Plazas Sopraval/Sopraval 06.png"
     ]
   }
 ]
